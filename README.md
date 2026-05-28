@@ -1,4 +1,4 @@
-<h1 align="center">Catalogo de jogos</h1>
+<h1 align="center">Mox </h1>
 
 ###
 
@@ -12,7 +12,7 @@
 
 ###
 
-<p align="left">O projeto consiste em uma rede social voltada para amantes de jogos, onde os usuários poderão compartilhar suas opiniões, experiências e avaliações sobre diferentes tipos de games, sejam eles jogos online, físicos, single player, multiplayer, retrô ou lançamentos atuais.<br><br>Inspirado no conceito do Letterboxd, a plataforma terá como objetivo criar uma comunidade interativa para jogadores, permitindo que cada usuário registre sua jornada gamer de forma personalizada e social.</p>
+<p align="left">O projeto consiste em uma "rede social" voltada para amantes de jogos, onde os usuários poderão compartilhar suas opiniões, experiências e avaliações sobre diferentes tipos de games, sejam eles jogos online, físicos, single player, multiplayer, retrô ou lançamentos atuais.<br><br>Inspirado no conceito do Letterboxd, a plataforma terá como objetivo criar uma comunidade interativa para jogadores, permitindo que cada usuário registre sua jornada gamer de forma personalizada e social.</p>
 
 ###
 
