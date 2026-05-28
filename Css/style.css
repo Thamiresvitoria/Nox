@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* LINKS */
+
+a {
+  color: #0088ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 15px 25px;
+  border: 1px solid #800080;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+
+}
+
+/* LOGO */
+
+nav span {
+  font-weight: bold;
+  font-size: 24px;
+  color: #800080;
+  
+}
+
+/* LINKS NAV */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: #d1d5db;
+  padding: 6px 10px;
+  border-radius: 8px;
+              
+}
+
+.nav-links a:hover,
+.nav-active {
+  color: white;
+  background-color: purple;
+  transition: transform 0.4s ease;
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 5px;
+  background: black;
+  color: white;
+  border: 1px solid purple;
+  border-radius: 35px;
+}
+
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: #610161;
+  transition: background 0.3s ease,
+              color 0.3s ease;
+}
+
+.btn-pesquisar, .btn-primeiro {
+  background-color: purple; 
+  color: white;
+  border: none;
+}
+
+.btn-lista {
+  background-color: transparent;
+  color: #0088ff;
+  border: 1px solid #0088ff; 
+}
+
+.principa {
+  background-color: #111111;
+  border: 2px solid purple;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.principal-badge {
+  background-color: #0088ff;
+  color: black;
+  padding: 3px 8px;
+  font-weight: bold;
+}
+
+.principal-title {
+  font-size: 35px;
+  margin: 10px 0;
+  color: purple;
+}
+
+.principal-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.score {
+  background-color: purple;
+  padding: 2px 6px;
+}
+
+.genero-tags {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  background-color: #222222;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.principal-desc {
+  margin-bottom: 15px;
+  color: #cccccc;
+}
+
+.principal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+#filtroGenero {
+  background-color: black;
+  color: white;
+  border: 1px solid purple;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.jogos-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+
+.jogos-card {
+  background-color: #111111;
+  border: 1px solid #333333;
+  width: 15%; 
+  min-width: 140px; 
+  padding-bottom: 10px;
+}
+
+.jogos-card:hover {
+  border-color: #0088ff; 
+}
+
+.jogos-card-cover {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.jogos-card-body {
+  padding: 8px;
+}
+
+.jogos-card-title {
+  font-weight: bold;
+}
+
+.jogos-card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #888888;
+  font-size: 13px;
+}
+
+.jogos-card-score {
+  color: #0088ff;
+}
+
+.content-with-sidebar {
+  display: flex;
+  gap: 20px;
+}
+
+.content-with-sidebar section {
+  width: 70%; 
+}
+
+.content-with-sidebar aside {
+  width: 30%; 
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feed-item {
+  background-color: #111111;
+  border: 1px solid #0088ff; 
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.feed-avatar {
+  width: 50px;
+  height: 50px;
+  border: 2px solid purple;
+}
+
+.feed-game-title {
+  color: purple;
+  font-weight: bold;
+}
+
+.feed-review {
+  margin: 10px 0;
+}
+
+.feed-actions {
+  display: flex;
+  gap: 15px;
+  color: #888888;
+  font-size: 12px;
+}
+
+.bug-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bug-card {
+  background-color: #111111;
+  border: 1px solid #333333;
+  padding: 10px;
+}
+
+.bug-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bug-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.bug-status {
+  font-size: 11px;
+  padding: 2px 5px;
+  color: white;
+}
+
+.bug-status.open {
+ background-color: red;
+}
+.bug-status.fixed { 
+background-color: green; 
+}
+
+.bug-meta {
+  font-size: 12px;
+  color: #666666;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid purple;
+  color: #666666;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin-left: 10px;
+  color: #666666;
+}
+
+@media (max-width: 700px) {
+  nav, .nav-links, .content-with-sidebar, footer {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .content-with-sidebar section, .content-with-sidebar aside {
+    width: 100%;
+  }
+
+  .jogos-card {
+    width: 45%; 
+  }
+}

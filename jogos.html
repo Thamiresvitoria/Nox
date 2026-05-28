@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/Css/jogos.css">
+  <title>Página de jogos</title>
+  
+</head>
+
+<body>
+
+  <nav>
+    <a href="/paginas/home" class="nav-logo"><span>Nox</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="feed.html" class="nav-active">Feed</a></li>
+      <li><a href="jogos.html">Jogos</a></li>
+      <li><a href="Perfil.html">Perfil</a></li>
+      <li><a href="Login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section id="main">
+
+    <div class="jogo-cover-wrap">
+      <img class="game-cover"
+        src="https://images.launchbox-app.com/r2_e91257e0-8377-44ef-9503-f04fba63976a.jpg"
+        alt="Hollow Knight" onerror="this.style.background='#1c1921'">
+
+      <div class="game-cover-actions">
+        <button class="adicionar">+ Adicionar à Lista</button>
+        <button class="status" id="btnZerado">
+          <i class="bi bi-check2"></i> Zerado
+        </button>
+      </div>
+    </div>
+
+    <!-- Informações principais -->
+    <div class="jogo-info">
+      <div class="jogo-meta-top">
+        <span class="jogo-ano">2024</span>
+        <span class="game-dot">·</span>
+        <span class="distribuidora">Team Cherry</span>
+        <span class="game-dot">·</span>
+        <span class="desenvolvedora">Team Chery</span>
+      </div>
+
+      <h1 class="jogo-titulo">Hollow Knight</h1>
+
+      <div class="jogo-tags">
+        <span class="tag">Metroidvania</span>
+        <span class="tag">Plataforma</span>
+        <span class="tag">Soulslike</span>
+        <span class="tag">Indie</span>
+        <span class="tag">Singleplayer</span>
+      </div>
+
+      <div class="jogo-platforms">
+        <span class="platform">PC</span>
+        <span class="platform">PS5</span>
+        <span class="platform">PS4</span>
+        <span class="platform">Nintendo Switch</span>
+        <span class="platform">Xbox One</span>
+      </div>
+
+      <p class="jogo-desc">
+        Hollow Knight é um RPG de ação e aventura em plataforma desenvolvido pela Team Cherry.
+        Ambientado nas ruínas de Hallownest, o jogo convida os jogadores a explorarem um vasto e
+        interconectado mundo subterrâneo repleto de cavernas labirínticas, chefões implacáveis e
+        segredos profundos. A lenda de um reino decaído e sua misteriosa infecção aguarda aqueles
+        corajosos o suficiente para enfrentá-la.
+      </p>
+
+      <!-- Nota geral da comunidade -->
+      <div class="jogo-score-block">
+        <div class="score-number">4.7</div>
+
+        <div class="score-details">
+
+          <div class="score-stars">
+            <i class="bi bi-star-fill"></i>
+          </div>
+
+          <div class="score-count">12.438 avaliações</div>
+
+          <!-- Distribuição de notas -->
+          <div class="score-bars">
+
+            <div class="score-bar-row">
+              <span class="score-bar-label">5 ></span>
+
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width: 62%"></div>
+              </div>
+
+              <span class="score-bar-pct">62%</span>
+            </div>
+
+            <div class="score-bar-row">
+              <span class="score-bar-label">4 ></span>
+
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width: 24%"></div>
+              </div>
+
+              <span class="score-bar-pct">24%</span>
+            </div>
+
+            <div class="score-bar-row">
+              <span class="score-bar-label">3 ></span>
+
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width: 9%"></div>
+              </div>
+
+              <span class="score-bar-pct">9%</span>
+            </div>
+
+            <div class="score-bar-row">
+              <span class="score-bar-label">2 ></span>
+
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width: 3%"></div>
+              </div>
+
+              <span class="score-bar-pct">3%</span>
+            </div>
+
+            <div class="score-bar-row">
+              <span class="score-bar-label">1 ></span>
+
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width: 2%"></div>
+              </div>
+
+              <span class="score-bar-pct">2%</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="jogo-body">
+
+    <!-- Coluna principal -->
+    <div class="jogo-main">
+
+      <!-- ═══ FORMULÁRIO DE AVALIAÇÃO ══════════════ -->
+      <section class="jogo-section" id="avaliar">
+        <h2 class="jogo-section-titulo">Sua <em>Avaliação</em></h2>
+
+        <div class="review-form">
+
+          <!-- Plataforma -->
+          <div class="review-campo">
+            <label class="review-label" for="plataforma">Plataforma jogada</label>
+
+            <select class="review-selecionar" id="plataforma">
+              <option value="">Selecione...</option>
+              <option value="pc">PC</option>
+              <option value="ps5">PS5</option>
+              <option value="ps4">PS4</option>
+              <option value="xbox-series">Xbox Series</option>
+              <option value="xbox-one">Xbox One</option>
+            </select>
+          </div>
+
+          <!-- Texto da review -->
+          <div class="review-field">
+            <label class="review-label" for="reviewText">
+              Review <span class="review-label-opt">(opcional)</span>
+            </label>
+
+            <textarea class="review-textarea"
+              id="reviewText"
+              placeholder="O que você achou do jogo? Spoilers? Use tags de spoiler..."
+              rows="4"></textarea>
+
+            <span class="review-char-count" id="charCount">0 / 500</span>
+          </div>
+
+          <button class="btn-review" id="btnEnviarReview">
+            Publicar Avaliação
+          </button>
+
+        </div>
+      </section>
+
+      <!-- ═══ REVIEWS DA COMUNIDADE ════════════════ -->
+      <section class="jogo-section">
+
+        <div class="jogo-section-header">
+          <h2 class="jogo-section-title">
+            Reviews da <em>Comunidade</em>
+          </h2>
+
+          <select class="review-sort">
+            <option>Mais recentes</option>
+            <option>Mais curtidas</option>
+            <option>Melhor nota</option>
+            <option>Pior nota</option>
+          </select>
+        </div>
+
+        <div class="reviews-list">
+
+          <div class="review-card">
+
+            <div class="review-card-header">
+              <img class="review-avatar"
+                src="https://api.dicebear.com/7.x/pixel-art/svg?seed=thamires"
+                alt="thamires.v" />
+
+              <div class="review-user-info">
+                <span class="review-username">thamires.v</span>
+
+                <div class="review-meta-row">
+                  <span class="review-stars">★★★★★</span>
+                  <span class="review-platform-tag">PC</span>
+                  <span class="review-date">15 mar 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="review-text">
+              Uma obra-prima absoluta. É mundo que não é apenas grande — ele é denso,
+              cheio de segredos e com uma coerência visual impressionante.
+              Cada área conta uma história só com o cenário.
+              Alem da maravilha trilha sonora.
+            </p>
+
+            <div class="review-card-footer">
+              <button class="post-action-btn liked">
+                <i class="bi bi-heart"></i> 87
+              </button>
+
+              <button class="post-action-btn">
+                <i class="bi bi-chat"></i> 12
+              </button>
+            </div>
+
+          </div>
+
+          <div class="review-card">
+
+            <div class="review-card-header">
+              <img class="review-avatar"
+                src="https://api.dicebear.com/7.x/pixel-art/svg?seed=lucas77"
+                alt="lucas77" />
+
+              <div class="review-user-info">
+                <span class="review-username">lucas77</span>
+
+                <div class="review-meta-row">
+                  <span class="review-stars">★★★★☆</span>
+                  <span class="review-platform-tag">PS5</span>
+                  <span class="review-date">2 jan 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="review-text">
+              Sou muito fã da jogabilidade do jogo e acho lindo os gráficos e trilha sonora,
+              sem falar nos personagens....
+            </p>
+
+            <div class="review-card-footer">
+              <button class="post-action-btn">
+                <i class="bi bi-heart"></i> 43
+              </button>
+
+              <button class="post-action-btn">
+                <i class="bi bi-chat"></i> 8
+              </button>
+            </div>
+
+          </div>
+
+          <div class="review-card">
+
+            <div class="review-card-header">
+              <img class="review-avatar"
+                src="https://api.dicebear.com/7.x/pixel-art/svg?seed=carol_ink"
+                alt="carol_ink" />
+
+              <div class="review-user-info">
+                <span class="review-username">carol_ink</span>
+
+                <div class="review-meta-row">
+                  <span class="review-stars">★★★★★</span>
+                  <span class="review-platform-tag">Xbox Series</span>
+                  <span class="review-date">18 out 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="review-text">
+              Jogo muito bom e simples, o primeiro jogo que joguei de computador em muito tempo,
+              passei horas explorando o mapa e vendo cada área em sua total extensão,
+              recomendo muito que joguem esse jogo,
+              Hollow Knight me fez gostar desse estilo de jogo que ainda costumo jogar até hoje.
+            </p>
+
+            <div class="review-card-footer">
+              <button class="post-action-btn">
+                <i class="bi bi-heart"></i> 61
+              </button>
+
+              <button class="post-action-btn">
+                <i class="bi bi-chat"></i> 5
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Sidebar lateral -->
+    <aside class="game-sidebar">
+
+      <!-- Informações extras -->
+      <div class="sidebar-widget">
+
+        <h3 class="widget-title">Informações</h3>
+
+        <div class="info-list">
+
+          <div class="info-row">
+            <span class="info-label">Lançamento</span>
+            <span class="info-value">25 fev 2022</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label">Desenvolvedor</span>
+            <span class="info-value">FromSoftware</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label">Publicador</span>
+            <span class="info-value">Bandai Namco</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label">Modo</span>
+            <span class="info-value">Single + Multi</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label">Tempo médio</span>
+            <span class="info-value">~60 horas</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Jogos similares -->
+      <div class="sidebar-widget">
+
+        <h3 class="widget-title">Similares</h3>
+
+        <div class="similares-list">
+
+          <div class="similar-item">
+            <div class="similar-cover"> 
+              <img src="/Assets/Bloodborne_capa.png" alt="Capa de Bloodborne">
+            </div>
+
+            <div class="similar-info">
+              <span class="similar-name">Bloodborne</span>
+              <img src="" alt="">
+              <span class="similar-score">
+                <i class="bi bi-star-fill"></i> 4.9
+              </span>
+            </div>
+          </div>
+
+          <div class="similar-item">
+            <div class="similar-cover"> 
+              <img src="/Assets/Sekiro_Shadows_Die_Twice_capa.png" alt="Capa de Sekiro">
+            </div>
+
+            <div class="similar-info">
+              <span class="similar-name">Sekiro</span>
+              <span class="similar-score">
+                <i class="bi bi-star-fill"></i> 4.6
+              </span>
+            </div>
+          </div>
+
+          <div class="similar-item">
+            <div class="similar-cover"> 
+              <img src="/Assets/Dark_Souls_3_capa.png" alt="">
+            </div>
+
+            <div class="similar-info">
+              <span class="similar-name">Dark Souls III</span>
+              <span class="similar-score">
+                <i class="bi bi-star-fill"></i> 4.5
+              </span>
+            </div>
+          </div>
+
+          <div class="similar-item">
+            <div class="similar-cover"> 
+              <img src="/Assets/Elden_Ring_capa.jpg" alt="">
+            </div>
+
+            <div class="similar-info">
+              <span class="similar-name">Elder Ring</span>
+              <span class="similar-score">
+                <i class="bi bi-star-fill"></i> 4.8
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <span>
+      © 2025 <strong class="footer-logo">Nox game</strong>
+      — Catálogo da comunidade gamer
+    </span>
+
+    <div class="footer-links">
+      <a href="#">Sobre</a>
+      <a href="#">API</a>
+      <a href="#">Privacidade</a>
+      <a href="#">GitHub</a>
+      
+    </div>
+
+  </footer>
+
+  <script src="game.js"></script>
+
+</body>
+</html>

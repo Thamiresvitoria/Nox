@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/Css/feed.css">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="/Css/catalogo.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">Nox</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="feed.html">Feed</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="jogos.html">Jogos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Buscar jogos...">
+      <button><i class="bi bi-search"></i>Pesquisar</button>
+    </div>
+  </nav>
+
+  <!-- FILTROS -->
+  <section class="filters">
+
+    <select>
+      <option>Todos os gêneros</option>
+      <option>Ação</option>
+      <option>RPG</option>
+      <option>Corrida</option>
+      <option>Soulslike</option>
+      <option>Hack & Slash</option>
+      <option>Roguelike</option>
+    </select>
+
+    <select>
+      <option>Todas as plataformas</option>
+      <option>Steam</option>
+      <option>Epic Games</option>
+      <option>Nuuvem</option>
+      <option>Instant Gaming</option>
+    </select>
+
+    <input type="number" placeholder="Ano mín">
+    <input type="number" placeholder="Ano máx">
+
+    <button class="btn">Filtrar</button>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <main class="grid">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <img src="/Assets/Elden_Ring_capa.jpg" alt="Elden Ring">
+
+      <div class="card-content">
+        <h2>Elden Ring</h2>
+
+        <p class="desc">
+          Um RPG de ação em mundo aberto onde você explora as Terras Intermédias e enfrenta inimigos brutais.
+        </p>
+
+        <div class="info">
+          <span><strong>Dev:</strong> FromSoftware</span>
+          <span><strong>Pub:</strong> Bandai Namco</span>
+          <span><strong>Gênero:</strong> Soulslike, RPG</span>
+          <span><strong>Horas:</strong> 60-120h</span>
+          <span><strong>Ano:</strong> 2022</span>
+        </div>
+
+        <button>Mais informações</button>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <img src="Assets/Sekiro_Shadows_Die_Twice_capa.png"seKIRO">
+
+     <div class="card-content">
+        <h2>Sekiro: Shadows Die Twice</h2>
+
+    <p class="desc">
+      Um jogo de ação intenso da FromSoftware focado em precisão, furtividade e combates brutais no Japão feudal.
+    </p>
+
+    <div class="info">
+      <span><strong>Dev:</strong> FromSoftware</span>
+      <span><strong>Pub:</strong> Activision</span>
+      <span><strong>Gênero:</strong> Soulslike, Ação</span>
+      <span><strong>Horas:</strong> 30-70h</span>
+      <span><strong>Ano:</strong> 2019</span>
+    </div>
+
+    <button>Mais informações</button>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <img src="/Assets/TW3_Wild_Hunt.png" alt="tHE WITCHER 3">
+
+      <div class="card-content">
+         <h2>The Witcher 3: Wild Hunt</h2>
+
+      <p class="desc">
+       Um RPG de mundo aberto onde Geralt de Rívia busca sua filha adotiva em um mundo cheio de monstros e escolhas morais.
+      </p>
+
+    <div class="info">
+      <span><strong>Dev:</strong> CD Projekt Red</span>
+      <span><strong>Pub:</strong> CD Projekt</span>
+      <span><strong>Gênero:</strong> RPG, Mundo Aberto</span>
+      <span><strong>Horas:</strong> 80-200h</span>
+      <span><strong>Ano:</strong> 2015</span>
+    </div>
+
+    <button>Mais informações</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+     <div class="footer-links">
+      <a href="#">Sobre</a>
+      <a href="#">API</a>
+      <a href="#">Privacidade</a>
+      <a href="#">GitHub</a>
+      
+    </div>
+  </footer>
+
+</body>
+
+</html>

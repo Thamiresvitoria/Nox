@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head></head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="/Css/feed.css">
+<title>Feed</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<nav>
+  <a href="/paginas/home" class="nav-logo"></a><span>Nox</span></a>
+
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="catalogo.html">Catálogo</a></li>
+    <li><a href="feed.html" class="nav-active">Feed</a></li>
+    <li><a href="jogos.html">Jogos</a></li>
+    <li><a href="perfil.html">Perfil</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+
+
+  <div class="nav-right">
+    <input class="search-bar" type="text" placeholder="Buscar jogos..." />
+    <button class="btn-login">Pesquisar</button>
+  </div>
+</nav>
+
+<!-- filtro global e amigos -->
+
+<div class="feed-tabs">
+  <button class="feed-tab active" data-tab="amigos">
+    <i class="bi bi-people-fill"></i> Amigos
+  </button>
+  <button class="feed-tab" data-tab="global">
+    <i class="bi bi-globe"></i> Global
+  </button>
+</div>
+</header>
+
+
+<!--  CORPO PRINCIPAL -->
+<div class="feed-principal">
+
+  <!-- Coluna principal: posts -->
+  <main class="feed-main">
+
+    <!-- Filtro de tipo de post -->
+    <div class="feed-tipo-filtro">
+      <span class="type-filtro active" data-type="todos">Todos</span>
+      <span class="type-filtro" data-type="review"><i class="bi bi-star"></i> Reviews</span>
+      <span class="type-filtro" data-type="bug"><i class="bi bi-bug-fill"></i> Bugs</span>
+      <span class="type-filtro" data-type="lista"><i class="bi bi-journal-bookmark-fill"></i> Listas</span>
+    </div>
+
+    <!--  POST: Review -->
+    <article class="post-card" data-type="review">
+      <div class="post-header">
+        <img class="post-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=thamires" alt="thamires.v" />
+        <div class="post-user-info">
+          <span class="post-username">thamires.v</span>
+          <span class="post-action">avaliou um jogo</span>
+          <span class="post-time">há 2 horas</span>
+        </div>
+        <span class="post-type-badge review">Review</span>
+      </div>
+
+      <div class="post-body">
+        <div class="post-game-info">
+          <div class="post-game-cover" style="background: linear-gradient(135deg,#2a1f3d,#1c1921);"></div>
+          <div class="post-game-details">
+            <p class="post-game-name">Hollow Knight</p>
+            <div class="post-stars">★★★★★</div>
+            <div class="post-game-tags">
+              <span class="tag">Metroidvania</span>
+              <span class="tag">Indie</span>
+            </div>
+          </div>
+        </div>
+        <p class="post-text">
+          Uma das experiências mais completas que já tive num metroidvania. Arte, trilha sonora e desafio impecáveis. O Grimm é meu inimigo favorito — aquela boss fight é puro teatro.
+        </p>
+      </div>
+
+      <div class="post-footer">
+        <button class="post-action-btn liked"> <i class="bi bi-heart"></i>14</button>
+        <button class="post-action-btn"> <i class="bi bi-chat"></i> 3 comentários</button>
+        <button class="post-action-btn"><i class="bi bi-share-fill"></i>Compartilhar</button>
+      </div>
+    </article>
+
+    <!--  POST: Bug  -->
+
+    <article class="post-card" data-type="bug">
+      <div class="post-header">
+        <img class="post-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=rafael_gg" alt="rafael_gg" />
+        <div class="post-user-info">
+          <span class="post-username">rafael_gg</span>
+          <span class="post-action">reportou um bug</span>
+          <span class="post-time">há 4 horas</span>
+        </div>
+        <span class="post-type-badge bug">Bug</span>
+      </div>
+
+      <div class="post-body">
+        <div class="post-bug-card">
+          <div class="bug-post-header">
+            <span class="bug-post-title">Queda de FPS na Área da Névoa</span>
+            <span class="bug-status open">Aberto</span>
+          </div>
+          <p class="bug-post-meta">Elden Ring · PC · DirectX 12</p>
+          <p class="post-text">
+            Toda vez que entro na área da névoa do Mountaintops of the Giants, o FPS cai de 60 para menos de 20. Já tentei reduzir as configurações gráficas e o problema persiste. Alguém mais está tendo isso?
+          </p>
+          <div class="bug-post-tags">
+            <span class="tag">Performance</span>
+            <span class="tag">PC</span>
+            <span class="tag">Gráficos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-footer">
+        <button class="post-action-btn"><i class="bi bi-heart"></i> 7</button>
+        <button class="post-action-btn"><i class="bi bi-chat"></i> 12 comentários</button>
+        <button class="post-action-btn"><i class="bi bi-share-fill"></i> Compartilhar</button>
+      </div>
+    </article>
+
+    <!--  POST: Lista -->
+    <article class="post-card" data-type="lista">
+      <div class="post-header">
+        <img class="post-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=carol_ink" alt="carol_ink" />
+        <div class="post-user-info">
+          <span class="post-username">carol_ink</span>
+          <span class="post-action">criou uma lista</span>
+          <span class="post-time">há 6 horas</span>
+        </div>
+        <span class="post-type-badge lista">Lista</span>
+      </div>
+
+      <div class="post-body">
+        <div class="post-lista-header">
+          <i class="bi bi-journal-bookmark-fill"></i>
+          <div>
+            <p class="lista-nome">Soulslike para iniciantes</p>
+            <p class="lista-desc">Os melhores jogos para quem quer entrar no gênero sem sofrer demais</p>
+          </div>
+        </div>
+        <div class="lista-covers">
+          <div class="lista-cover" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+            <span class="lista-cover-title">Elden Ring</span>
+          </div>
+          <div class="lista-cover" style="background:linear-gradient(135deg,#0f3460,#533483);">
+            <span class="lista-cover-title">Hollow Knight</span>
+          </div>
+          <div class="lista-cover" style="background:linear-gradient(135deg,#2d132c,#ee4540);">
+            <span class="lista-cover-title">Hades</span>
+          </div>
+          <div class="lista-cover lista-cover-more">+5</div>
+        </div>
+      </div>
+
+      <div class="post-footer">
+        <button class="post-action-btn"><i class="bi bi-heart"></i>31</button>
+        <button class="post-action-btn"><i class="bi bi-chat"></i> 8 comentários</button>
+        <button class="post-action-btn"><i class="bi bi-share-fill"></i> Compartilhar</button>
+      </div>
+    </article>
+
+    <!-- ── POST: Review 2 ────────────────────────── -->
+    <article class="post-card" data-type="review">
+      <div class="post-header">
+        <img class="post-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=lucas77" alt="lucas77" />
+        <div class="post-user-info">
+          <span class="post-username">lucas77</span>
+          <span class="post-action">avaliou um jogo</span>
+          <span class="post-time">há 1 dia</span>
+        </div>
+        <span class="post-type-badge review">Review</span>
+      </div>
+
+      <div class="post-body">
+        <div class="post-game-info">
+          <div class="post-game-cover" style="background: linear-gradient(135deg,#1c2a1f,#121c15);"></div>
+          <div class="post-game-details">
+            <p class="post-game-name">Sekiro: Shadows Die Twice</p>
+            <div class="post-stars">★★★★☆</div>
+            <div class="post-game-tags">
+              <span class="tag">Soulslike</span>
+              <span class="tag">Ação</span>
+            </div>
+          </div>
+        </div>
+        <p class="post-text">
+          Guardião do Macaco e Isshin me fizeram desinstalar duas vezes. Mas terminei com um sorriso enorme no rosto. O sistema de parry é o melhor que já joguei.
+        </p>
+      </div>
+
+      <div class="post-footer">
+        <button class="post-action-btn"><i class="bi bi-heart"></i> 9</button>
+        <button class="post-action-btn"><i class="bi bi-chat"></i> 7 comentários</button>
+        <button class="post-action-btn"><i class="bi bi-share-fill"></i> Compartilhar</button>
+      </div>
+    </article>
+
+    <!--  POST: Bug 2 -->
+    <article class="post-card" data-type="bug">
+      <div class="post-header">
+        <img class="post-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=mari_plays" alt="mari_plays" />
+        <div class="post-user-info">
+          <span class="post-username">mari_plays</span>
+          <span class="post-action">reportou um bug</span>
+          <span class="post-time">há 1 dia</span>
+        </div>
+        <span class="post-type-badge bug">Bug</span>
+      </div>
+
+      <div class="post-body">
+        <div class="post-bug-card">
+          <div class="bug-post-header">
+            <span class="bug-post-title">Diálogo NPC travado após cutscene</span>
+            <span class="bug-status fixed">Corrigido</span>
+          </div>
+          <p class="bug-post-meta">Hades · PS5</p>
+          <p class="post-text">
+            Depois de assistir a cutscene do Zagreus com Nyx, o diálogo do próximo NPC que interagi ficou travado na primeira linha. Precisei reiniciar o jogo.
+          </p>
+          <div class="bug-post-tags">
+            <span class="tag">Diálogo</span>
+            <span class="tag">PS5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-footer">
+        <button class="post-action-btn"><i class="bi bi-heart"></i> 4</button>
+        <button class="post-action-btn"><i class="bi bi-chat"></i> 2 comentários</button>
+        <button class="post-action-btn"><i class="bi bi-share-fill"></i> Compartilhar</button>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Sidebar direita -->
+  <aside class="feed-sidebar">
+
+    <!-- Usuários sugeridos -->
+    <div class="sidebar-widget">
+      <h3 class="widget-title">Quem <em>Seguir</em></h3>
+      <div class="suggest-list">
+
+        <div class="suggest-item">
+          <img class="suggest-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=jorge_dark" alt="jorge_dark" />
+          <div class="suggest-info">
+            <span class="suggest-name">jorge_dark</span>
+            <span class="suggest-meta">42 reviews · Soulslike</span>
+          </div>
+          <button class="btn-seguir">Seguir</button>
+        </div>
+
+        <div class="suggest-item">
+          <img class="suggest-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=ana_rpg" alt="ana_rpg" />
+          <div class="suggest-info">
+            <span class="suggest-name">ana_rpg</span>
+            <span class="suggest-meta">87 reviews · RPG</span>
+          </div>
+          <button class="btn-seguir">Seguir</button>
+        </div>
+
+        <div class="suggest-item">
+          <img class="suggest-avatar" src="https://api.dicebear.com/7.x/pixel-art/svg?seed=pedro_indie" alt="pedro_indie" />
+          <div class="suggest-info">
+            <span class="suggest-name">pedro_indie</span>
+            <span class="suggest-meta">19 reviews · Indie</span>
+          </div>
+          <button class="btn-seguir">Seguir</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Em alta agora -->
+    <div class="sidebar-widget">
+      <h3 class="widget-title">Em Alta <em>Agora</em></h3>
+      <div class="trending-list">
+
+        <div class="trending-item">
+          <span class="trending-rank">01</span>
+          <div class="trending-info">
+            <span class="trending-name">Elden Ring</span>
+            <span class="trending-meta">2.4k avaliações esta semana</span>
+          </div>
+        </div>
+
+        <div class="trending-item">
+          <span class="trending-rank">02</span>
+          <div class="trending-info">
+            <span class="trending-name">Hollow Knight</span>
+            <span class="trending-meta">1.1k avaliações esta semana</span>
+          </div>
+        </div>
+
+        <div class="trending-item">
+          <span class="trending-rank">03</span>
+          <div class="trending-info">
+            <span class="trending-name">Hades</span>
+            <span class="trending-meta">890 avaliações esta semana</span>
+          </div>
+        </div>
+
+        <div class="trending-item">
+          <span class="trending-rank">04</span>
+          <div class="trending-info">
+            <span class="trending-name">Blasphemous</span>
+            <span class="trending-meta">430 avaliações esta semana</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- ═══ FOOTER ══════════════════════════════════ -->
+<footer>
+  <span>© 2025 <strong class="footer-logo">VAULTLOG</strong> — Catálogo da comunidade gamer</span>
+  <div class="footer-links">
+    <a href="#">Sobre</a>
+    <a href="#">API</a>
+    <a href="#">Privacidade</a>
+    <a href="#">GitHub</a>
+  </div>
+</footer>
+
+<script src="feed.js"></script>
+
+<body>
+
+</body>
+
+</html>
