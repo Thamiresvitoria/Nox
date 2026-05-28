@@ -10,28 +10,30 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
   justify-content: space-between;
   padding: 20px;
 }
 
 a {
-  color: #0088ff; 
+  color: #ffffff;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-  text-decoration: underline; 
+  color: white;
+  background-color: purple;
 }
 
 .card {
-  background-color: #111111; 
+  background-color: #111111;
   border: 3px solid purple;
   border-radius: 20px;
-  width: 450%;
-  max-width: 500px; 
-  min-width: 600px;
-  margin: auto; 
+  width: 100%;           /* era 450% — quebrava tudo */
+  max-width: 500px;
+  /* min-width removido — ele impedia o card de encolher */
+  margin: auto;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -45,27 +47,33 @@ a:hover {
   margin-top: 5px;
 }
 
-.card-email, .card-senha {
+.card-email,
+.card-senha {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.card-email label, .card-senha label {
+.card-email label,
+.card-senha label {
   font-weight: bold;
   font-size: 14px;
 }
 
-.card-email input, .card-senha input {
+.card-email input,
+.card-senha input {
   background-color: black;
   color: white;
-  border: 1px solid purple; 
+  border: 1px solid purple;
   padding: 10px;
   font-size: 14px;
+  width: 100%;           /* garante que o input não estoure o card */
+  border-radius: 4px;
 }
 
-.card-email input:focus, .card-senha input:focus {
-  border-color: #0088ff; 
+.card-email input:focus,
+.card-senha input:focus {
+  border-color: #0088ff;
   outline: none;
 }
 
@@ -74,6 +82,8 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
+  flex-wrap: wrap;       /* evita overflow em telas muito pequenas */
+  gap: 8px;
 }
 
 .options label {
@@ -91,18 +101,25 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
+  width: 100%;           /* botões ocupam toda a largura do card */
+  border-radius: 4px;
 }
 
 button[type="submit"] {
-  background-color: purple; 
+  background-color: purple;
   color: white;
   border: none;
   margin-top: 5px;
 }
 
 button[type="submit"]:hover {
-  background-color: #0088ff; 
+  background-color: #0088ff;
+}
+
+button:hover {
+  color: white;
+  background-color: purple;
 }
 
 .separar {
@@ -112,14 +129,18 @@ button[type="submit"]:hover {
   position: relative;
 }
 
-#google, #faceboom, #steam {
+#google,
+#faceboom,
+#steam {
   background-color: black;
   color: white;
   border: 1px solid #333333;
 }
 
-#google:hover, #faceboom:hover, #steam:hover {
-  border-color: #0088ff; 
+#google:hover,
+#faceboom:hover,
+#steam:hover {
+  border-color: #0088ff;
   color: #0088ff;
 }
 
@@ -133,12 +154,15 @@ button[type="submit"]:hover {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
   border-top: 1px solid purple;
   color: #666666;
   margin-top: 40px;
   font-size: 14px;
   width: 100%;
+  flex-wrap: wrap;       /* footer também quebra bem em telas médias */
+  gap: 10px;
 }
 
 .footer-logo {
@@ -150,40 +174,34 @@ footer {
   color: #666666;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-button:hover{
-  color: white;
-  background-color: purple;
-}
-
-a:hover{
-  color: white;
-  background-color: purple;
-}
-
+/* ── Telas pequenas (≤ 480px) ── */
 @media (max-width: 480px) {
   body {
-    justify-content: flex-start; 
+    padding: 16px;
+    justify-content: flex-start;
   }
 
   .card {
     padding: 20px;
-    border-width: 1px; 
+    border-width: 2px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
   }
 
   footer {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     text-align: center;
   }
-  
+
   .footer-links a {
     margin: 0 5px;
   }
-}
+    }
